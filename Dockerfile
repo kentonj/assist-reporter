@@ -10,5 +10,5 @@ COPY models models
 RUN go get -d -v ./...
 
 RUN go build
-
+RUN chmod +x ./assist
 CMD ["./assist"]
